@@ -26,7 +26,6 @@ grow_horizontal = 2
 alignment = 1
 
 [node name="Details" type="VBoxContainer" parent="Overview/HBoxContainer"]
-editor/display_folded = true
 margin_left = 226.0
 margin_right = 566.0
 margin_bottom = 706.0
@@ -51,7 +50,7 @@ size_flags_horizontal = 3
 max_length = 32
 expand_to_text_length = true
 clear_button_enabled = true
-placeholder_text = "My Supper Game Name"
+placeholder_text = "My Super Game Name"
 
 [node name="Button" type="Button" parent="Overview/HBoxContainer/Details/HBoxContainer2"]
 editor/display_folded = true
@@ -83,7 +82,7 @@ margin_bottom = 110.0
 max_length = 32
 expand_to_text_length = true
 clear_button_enabled = true
-placeholder_text = "My Gamne genre (Platformer, RPG, FPS, etc...)"
+placeholder_text = "My Game genre (Platformer, RPG, FPS, etc...)"
 
 [node name="HSeparator2" type="HSeparator" parent="Overview/HBoxContainer/Details"]
 margin_top = 114.0
@@ -161,7 +160,7 @@ size_flags_vertical = 3
 margin_top = 288.0
 margin_right = 340.0
 margin_bottom = 302.0
-text = "Target Audiance:"
+text = "Target Audience:"
 
 [node name="Audiance" type="HBoxContainer" parent="Overview/HBoxContainer/Details"]
 editor/display_folded = true
@@ -342,6 +341,9 @@ text = "Age Rating:"
 margin_top = 618.0
 margin_right = 340.0
 margin_bottom = 638.0
+text = "EVERYONE"
+items = [ "EVERYONE", null, false, 0, null, "EVERYONE 10+", null, false, 1, null, "TEEN", null, false, 2, null, "Mature", null, false, 3, null, "ADULTS ONLY", null, false, 4, null ]
+selected = 0
 script = ExtResource( 2 )
 
 [node name="HSeparator8" type="HSeparator" parent="Overview/HBoxContainer/Details"]
@@ -364,6 +366,7 @@ margin_bottom = 706.0
 placeholder_text = "day/month/year"
 
 [node name="Key Features" type="Tabs" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -447,26 +450,29 @@ smooth_scrolling = true
 wrap_enabled = true
 
 [node name="Design" type="Tabs" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
+margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
 
 [node name="Engineering" type="Tabs" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
+margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
 
 [node name="Art" type="Tabs" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
+margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
 [connection signal="pressed" from="Overview/HBoxContainer/Details/HBoxContainer2/Button" to="Overview/HBoxContainer/Details/HBoxContainer2/Button" method="_on_Button_pressed"]
