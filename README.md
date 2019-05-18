@@ -12,3 +12,7 @@ I hope you'll enjoy it.
 - [ ] 🗂 Categorize your content into different tabs
 - [ ] 💭 Random Project name generator included
 - [ ] ✔️ Checkbox to specify that a feature is completed
+
+## Screenshot
+
+![overview](./misc/screenshot.png)

@@ -1,17 +1,15 @@
 tool
 extends EditorPlugin
 
-const MainScreen = preload("res://addons/GameDesignManager/scenes/MainScreen.tscn")
-
-var main_screen_instance = null
+var MainScreen
 
 func _enter_tree():
-	main_screen_instance = MainScreen.instance()
+	MainScreen = preload("res://addons/GameDesignManager/scenes/MainScreen.tscn").instance()
 	# Add the main panel to the editor's main viewport.
-	get_editor_interface().get_editor_viewport().add_child(main_screen_instance)
+	get_editor_interface().get_editor_viewport().add_child(MainScreen)
 
 func _exit_tree():
-   main_screen_instance.queue_free()
+   MainScreen.queue_free()
 
 func _ready():
 	pass
