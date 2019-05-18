@@ -9,7 +9,7 @@ extends Button
 Description of the Constructor
 """
 func _init():
-    print("Constructed!")
+	print("Constructed!")
 
 ##################################################################### Overrides
 func _enter_tree():
