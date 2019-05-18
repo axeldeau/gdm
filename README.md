@@ -1,8 +1,10 @@
 # Game Design Manager
 
-Game Design Manager (or gdm for short) is a main screen plugin that helps you organize your bright 💡design ideas💡 without leaving the Godot Editor.
-Thinking about a feature ? Add it directly to the Feature section 👌.
+Game Design Manager (or gdm for short) is a main screen plugin that helps you organize your bright 💡design ideas💡 without leaving the Godot Editor.  
+Thinking about a feature ? Add it directly to the Feature section 👌.  
 I hope you'll enjoy it.
+
+⚠️ Under **Heavy development** not __event working__ at the momment ⚠️
 
 ## Features
 
